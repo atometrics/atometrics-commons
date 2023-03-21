@@ -1,0 +1,1 @@
+export {default as RangeSelect} from './RangeSelect.vue'

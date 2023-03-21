@@ -1,0 +1,15 @@
+{
+  "name": "atometrics-common",
+  "version": "1.0.4",
+  "description": "Common components and functions for atometrics applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "atometrics",
+  "license": "ISC",
+  "dependencies": {
+    "npm-pack": "^1.0.0",
+    "vue-slider-component": "^3.2.24"
+  }
+}
