@@ -1,6 +1,6 @@
 {
   "name": "atometrics-common",
-  "version": "1.0.4",
+  "version": "1.0.0",
   "description": "Common components and functions for atometrics applications",
   "main": "index.js",
   "scripts": {
