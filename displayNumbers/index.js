@@ -37,6 +37,10 @@ function displayEuro(number, { signed } = {}) {
   })
 }
 
+function displayNumberTo025(number, options) {
+  return displayNumber(Math.round(number * 4) / 4, options)
+}
+
 function displayEuroDicimaled(number, { signed } = {}) {
   return displayNumber(number, {
     signed,
@@ -80,5 +84,6 @@ export {
   displayDays,
   displayEuroDicimaled,
   displayMonthsInYearsAndMonths,
-  displayPoints
+  displayPoints,
+  displayNumberTo025
 }
