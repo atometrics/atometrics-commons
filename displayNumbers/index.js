@@ -1,4 +1,4 @@
-// +1-1 forces to have a positive 0, so we never display -0
+// -1+1 forces to have a positive 0, so we never display -0
 function displayNumber(
   number,
   { signed, decimals, emptyVal, unit, currencyDisplay, currency, style, minimumFractionDigits } = {}
@@ -6,7 +6,7 @@ function displayNumber(
   return (!number && number != 0) || Math.abs(number) === Infinity
     ? emptyVal || 'n.a.'
     : (signed && number >= 0 ? '+' : '') +
-        (number + 1 - 1).toLocaleString('fr-FR', {
+        (+number - 1 + 1).toLocaleString('fr-FR', {
           maximumFractionDigits: !decimals && decimals != 0 ? 2 : decimals,
           currencyDisplay,
           currency,
